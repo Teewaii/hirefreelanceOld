@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply font-bold;
+    }
+
+    p {
+        @apply font-medium text-body;
+    }
+
+    li {
+        @apply font-medium text-body text-[15px];
+    }
+}
+
+/* 
+@layer components {
+    .btn-blue {
+        @apply bg-primary text-white font-medium text-[15px] lg: px-[40px] py-[10px] rounded-full;
+    }
+} */

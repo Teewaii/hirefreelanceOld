@@ -9,6 +9,7 @@ import Hero from '../components/hero/Hero';
 import Values from '../components/values/Values';
 import Journey from '../components/journey/Journey';
 import Features from '../components/features/Features';
+import Footer from '../components/footer/Footer';
 
 
 export default function Home() {
@@ -40,6 +41,8 @@ export default function Home() {
       <Values />
       <Journey />
       <Features />
+      <Footer />
+
       {!toggle && <div onClick={() => setToggle(true)} className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60  lg:hidden"></div>}
 
     </div>

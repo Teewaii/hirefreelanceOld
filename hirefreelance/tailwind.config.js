@@ -36,6 +36,7 @@ module.exports = {
         'dekstopHero': "url('/img/desktopHero.svg')",
         'mobHero': "url('/img/mobHero.svg')",
         'journey': "url('/img/journey_watermark.svg')",
+        'footer_wmk': "url('/img/footer_watermark.svg')",
       }
     },
   },

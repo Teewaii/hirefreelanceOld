@@ -9,15 +9,15 @@ import { ChevronRightIcon } from '@heroicons/react/24/solid'
 function Features() {
     return (
         <section className="features min-h-screen md:h-[50vh] border flex items-start">
-            <div className='flex flex-col items-center gap-8 py-10 lg:py-14 container '>
+            <div className='flex flex-col items-center gap-8 py-20 lg:py-14 container '>
 
                 <div className="top flex flex-col items-center text-center">
                     <h1 className='text-3xl lg:text-4xl text-heading mb-4 '>Our Features</h1>
                     <p className='text-sm max-w-[350px]  mb-4'>Unleash your creativety with a visual collaboration plattorm that enables effective ideation</p>
                 </div>
-                <div className="feature-item md:flex items-end  justify-between w-[100%] space-y-8 md:space-y-0 mb-12">
+                <div className="feature-item md:flex items-end  justify-between w-[100%] space-y-8 md:space-y-0 mb-4 lg:mb-12">
                     <div className="choosing flex flex-col items-center space-y-2  ">
-                        <Image className='w-8'
+                        <Image className='w-10'
                             src={choose}
                             alt='icon'
                         />
@@ -27,7 +27,7 @@ function Features() {
                     </div>
 
                     <div className="clients flex flex-col items-center space-y-2  ">
-                        <Image className='w-8'
+                        <Image className='w-10'
                             src={clients}
                             alt='icon'
                         />
@@ -36,7 +36,7 @@ function Features() {
 
                     </div>
                     <div className="initial flex flex-col items-center space-y-2 ">
-                        <Image className='w-8'
+                        <Image className='w-10'
                             src={initial}
                             alt='icon'
                         />
@@ -45,7 +45,7 @@ function Features() {
 
                     </div>
                     <div className="request flex flex-col items-center space-y-2 ">
-                        <Image className='w-8'
+                        <Image className='w-10'
                             src={request}
                             alt='icon'
                         />

@@ -25,6 +25,7 @@ const Home: NextPage = () => {
       <Nav />
       <div className="mob">
         <Hamburger
+        
         />
       </div>
     </div>

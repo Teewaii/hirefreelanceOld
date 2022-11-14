@@ -29,6 +29,9 @@ module.exports = {
         'body': '#5B5B5B',
         'heading': '#2C3847',
       },
+      screens: {
+        '3xl': '1700px',
+      },
     },
   },
   plugins: [],

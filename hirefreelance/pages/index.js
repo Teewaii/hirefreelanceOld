@@ -6,6 +6,7 @@ import Hamburger from '../components/hamburger/Hamburger';
 import Nav from '../components/nav/Nav'
 import logo from '../public/img/LogoBlue.svg'
 import Hero from '../components/hero/Hero';
+import Feautes from '../components/features/Feautes';
 
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
         />
         </div>
         <Hero/>
+        <Feautes/>
        {!toggle && <div onClick={()=>setToggle(true)} className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60  lg:hidden"></div>}
       
     </div>

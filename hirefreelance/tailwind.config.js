@@ -35,6 +35,7 @@ module.exports = {
       backgroundImage: {
         'dekstopHero': "url('/img/desktopHero.svg')",
         'mobHero': "url('/img/mobHero.svg')",
+        'journey': "url('/img/journey_watermark.svg')",
       }
     },
   },

@@ -1,0 +1,67 @@
+import Image from 'next/image';
+import choose from '../../public/img/service.svg';
+import clients from '../../public/img/clients.svg';
+import initial from '../../public/img/initial.svg';
+import request from '../../public/img/request.svg';
+import { ChevronRightIcon } from '@heroicons/react/24/solid'
+
+
+function Features() {
+    return (
+        <section className="features min-h-screen md:h-[50vh] border flex items-start">
+            <div className='flex flex-col items-center gap-8 py-10 lg:py-14 container '>
+
+                <div className="top flex flex-col items-center text-center">
+                    <h1 className='text-3xl lg:text-4xl text-heading mb-4 '>Our Features</h1>
+                    <p className='text-sm max-w-[350px]  mb-4'>Unleash your creativety with a visual collaboration plattorm that enables effective ideation</p>
+                </div>
+                <div className="feature-item md:flex items-end  justify-between w-[100%] space-y-8 md:space-y-0 mb-12">
+                    <div className="choosing flex flex-col items-center space-y-2  ">
+                        <Image className='w-8'
+                            src={choose}
+                            alt='icon'
+                        />
+                        <h1>Choosing a Service</h1>
+                        <p className='text-[0.8rem] w-[180px] text-center space-y-2 ' >Choosing an accountant that matches your needs</p>
+
+                    </div>
+
+                    <div className="clients flex flex-col items-center space-y-2  ">
+                        <Image className='w-8'
+                            src={clients}
+                            alt='icon'
+                        />
+                        <h1>Our Clients Say</h1>
+                        <p className='text-[0.8rem] w-[180px] text-center space-y-2'>Read the reviews from some of our satisfied clients</p>
+
+                    </div>
+                    <div className="initial flex flex-col items-center space-y-2 ">
+                        <Image className='w-8'
+                            src={initial}
+                            alt='icon'
+                        />
+                        <h1>Initial Consultation</h1>
+                        <p className='text-[0.8rem] w-[180px] text-center'>Understanding your accountancy requirements</p>
+
+                    </div>
+                    <div className="request flex flex-col items-center space-y-2 ">
+                        <Image className='w-8'
+                            src={request}
+                            alt='icon'
+                        />
+                        <h1>Request a Callback</h1>
+                        <p className='text-[0.8rem] w-[180px] text-center'>Lets talk at a more convenient time for you</p>
+
+                    </div>
+
+                </div>
+
+                <a className='text-sm flex gap-1 underline text-primary' href="#">Learn more <ChevronRightIcon className='w-3' /></a>
+            </div>
+
+
+        </section>
+    )
+}
+
+export default Features

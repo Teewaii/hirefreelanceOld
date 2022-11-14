@@ -6,7 +6,9 @@ import Hamburger from '../components/hamburger/Hamburger';
 import Nav from '../components/nav/Nav'
 import logo from '../public/img/LogoBlue.svg'
 import Hero from '../components/hero/Hero';
-import Feautes from '../components/features/Feautes';
+import Values from '../components/values/Values';
+import Journey from '../components/journey/Journey';
+import Features from '../components/features/Features';
 
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
     setToggle(prev => !prev)
   }
   return (
-    <div className=''>      
+    <div className=''>
       <Head>
         <title>Freelance Hire</title>
         <link rel="icon" href="/favicon.ico" />
@@ -24,20 +26,22 @@ export default function Home() {
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         </style>
       </Head>
-      
-      <Nav 
-      toggle={toggle}
-      OpenMenu={OpenMenu} />
+
+      <Nav
+        toggle={toggle}
+        OpenMenu={OpenMenu} />
       <div className="mob">
         <Hamburger
-        toggle={toggle}
-        OpenMenu={OpenMenu}
+          toggle={toggle}
+          OpenMenu={OpenMenu}
         />
-        </div>
-        <Hero/>
-        <Feautes/>
-       {!toggle && <div onClick={()=>setToggle(true)} className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60  lg:hidden"></div>}
-      
+      </div>
+      <Hero />
+      <Values />
+      <Journey />
+      <Features />
+      {!toggle && <div onClick={() => setToggle(true)} className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60  lg:hidden"></div>}
+
     </div>
   )
 }

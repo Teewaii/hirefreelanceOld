@@ -32,6 +32,10 @@ module.exports = {
       screens: {
         '3xl': '1700px',
       },
+      backgroundImage: {
+        'dekstopHero': "url('/img/desktopHero.svg')",
+        'mobHero': "url('/img/mobHero.svg')",
+      }
     },
   },
   plugins: [],

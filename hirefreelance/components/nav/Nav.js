@@ -9,7 +9,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 function Nav({toggle,OpenMenu}) {
 
     return (
-        <nav className={toggle?'bg-primary hidden lg:flex h-screen lg:h-fit py-4 absolute  left-0 right-[35%] top-0 lg:right-0 lg:top-6 lg:bg-transparent lg:py-0':'bg-primary h-screen lg:h-fit py-4 absolute  left-0 right-[35%] top-0 lg:right-0 lg:top-6 lg:bg-transparent lg:py-0'}>
+        <nav className={toggle?'bg-primary hidden lg:flex h-screen lg:h-fit py-4 absolute  left-0 right-[35%] top-0 lg:right-0 lg:top-6 lg:bg-transparent lg:py-0 ':'z-[200] bg-primary h-screen lg:h-fit py-4 absolute  left-0 right-[35%] top-0 lg:right-0 lg:top-6 lg:bg-transparent lg:py-0'}>
             <div className="navWrapper space-y-16 container lg:flex lg:items-center lg:justify-between lg:space-y-0 ">
                 <div className="logo  w-fit ">
                     <Link href='/'><Image src={logo} alt='logo'

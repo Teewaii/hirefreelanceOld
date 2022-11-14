@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Hamburger from '../components/hamburger/Hamburger';
 import Nav from '../components/nav/Nav'
 import logo from '../public/img/LogoBlue.svg'
+import Hero from '../components/hero/Hero';
 
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
     setToggle(prev => !prev)
   }
   return (
-    <div className={styles.container}>      
+    <div className=''>      
       <Head>
         <title>Freelance Hire</title>
         <link rel="icon" href="/favicon.ico" />
@@ -32,7 +33,8 @@ export default function Home() {
         OpenMenu={OpenMenu}
         />
         </div>
-       {!toggle && <div className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-20 -z-10 lg:hidden"></div>}
+        <Hero/>
+       {!toggle && <div onClick={()=>setToggle(true)} className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60  lg:hidden"></div>}
       
     </div>
   )

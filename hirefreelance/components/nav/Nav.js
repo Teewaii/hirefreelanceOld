@@ -2,9 +2,14 @@ import Image from 'next/image';
 // import logo from '../public/img/LogoBlue.svg'
 import logo from '../../public/img/LogoBlue.svg'
 import logomob from '../../public/img/LogoWhite.svg'
-import Link from 'next/link';
+// import Link from 'next/link';
 import Btn from '../btn/Btn';
 import { Bars3Icon } from '@heroicons/react/24/solid'
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+
+
 
 function Nav({toggle,OpenMenu}) {
 
@@ -17,6 +22,18 @@ function Nav({toggle,OpenMenu}) {
                 </div>
                 <div className="links ">
                     <ul className='space-y-3  lg:flex lg:space-x-[36px] lg:space-y-0 items-center'>
+                        <li className='cursor-pointer text-white lg:text-body py-2 pl-12 lg:pl-0 '>
+                            <Link activeClass="active" to="features" spy={true} smooth={true} offset={0} duration={500} >Services</Link>
+                        </li>
+                        <li className='cursor-pointer text-white lg:text-body py-2 pl-12 lg:pl-0 '>
+                            <Link activeClass="active" to="values" spy={true} smooth={true} offset={0} duration={500}>About us</Link>
+                        </li>
+                        <li className='cursor-pointer text-white lg:text-body py-2 pl-12 lg:pl-0 '>
+                            <Link activeClass="active" to="features" spy={true} smooth={true} offset={0} duration={500}>Blog</Link>
+                        </li>
+
+                    </ul>
+                    {/* <ul className='space-y-3  lg:flex lg:space-x-[36px] lg:space-y-0 items-center'>
                         <li className='text-white lg:text-body py-2 pl-12 lg:pl-0 '>
                             <Link href='#service'>Services</Link>
                         </li>
@@ -27,7 +44,7 @@ function Nav({toggle,OpenMenu}) {
                             <Link href='#Blog'>Blog</Link>
                         </li>
 
-                    </ul>
+                    </ul> */}
 
                 </div>
                 <div className="rightSide">
@@ -43,3 +60,8 @@ function Nav({toggle,OpenMenu}) {
 }
 
 export default Nav
+
+
+{/* <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+Test 1
+</Link> */}

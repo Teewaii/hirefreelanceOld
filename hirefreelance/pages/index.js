@@ -10,6 +10,8 @@ import Values from '../components/values/Values';
 import Journey from '../components/journey/Journey';
 import Features from '../components/features/Features';
 import Footer from '../components/footer/Footer';
+import ScrollToTop from "react-scroll-to-top";
+import Totop from '../components/btn/Totop';
 
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
     setToggle(prev => !prev)
   }
   return (
-    <div className=''>
+    <div className='relative'>
       <Head>
         <title>Freelance Hire</title>
         <link rel="icon" href="/favicon.ico" />
@@ -42,7 +44,9 @@ export default function Home() {
       <Journey />
       <Features />
       <Footer />
-
+      {/* <ScrollToTop smooth /> */}
+      <Totop/>
+     
       {!toggle && <div onClick={() => setToggle(true)} className="overlay absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60  lg:hidden"></div>}
 
     </div>

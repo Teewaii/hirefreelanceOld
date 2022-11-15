@@ -7,7 +7,7 @@ function Footer() {
     return (
         <section className="footer bg-footer_wmk bg-right-top bg-fit bg-no-repeat  py-[50px]  relative  after:absolute after:bg-primary after:top-0 after:bottom-0 after:left-0 after:right-0 after:z-[-1] h-[75vh]">
             <div className='footer-wrapper container flex flex-col items-center py-20 space-y-12'>
-                <h1 className='text-white text-2xl text-center font-normal'> People who are
+                <h1 className='text-white text-2xl lg:text-4xl lg:max-w-[450px] text-center font-normal'> People who are
                     ready took these courses!</h1>
                 <Appointment />
 
